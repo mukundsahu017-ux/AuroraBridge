@@ -1,0 +1,28 @@
+[package]
+name = "bridge-relayer"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+bridge-shared = { path = "../shared" }
+tokio = { workspace = true }
+reqwest = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+anyhow = { workspace = true }
+ed25519-dalek = { workspace = true }
+hex = { workspace = true }
+sha2 = { workspace = true }
+
+# Stellar/Horizon client (optional - using reqwest for HTTP calls)
+# stellar-base = "0.6.0"  # Uncomment if needed
+
+# NEAR RPC (optional - using reqwest for HTTP calls)
+# near-jsonrpc-client = "0.6"
+# near-primitives = "0.20"
+
+# Config and logging
+toml = "0.8"
+tracing = "0.1"
+tracing-subscriber = "0.3"
+dotenv = "0.15"

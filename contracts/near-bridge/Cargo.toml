@@ -1,0 +1,21 @@
+[package]
+name = "near-bridge"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+near-sdk = { workspace = true }
+bridge-shared = { path = "../../shared", features = ["near"] }
+serde = { workspace = true }
+serde_json = { workspace = true }
+
+[profile.release]
+codegen-units = 1
+opt-level = "z"
+lto = true
+debug = false
+panic = "abort"
+overflow-checks = true

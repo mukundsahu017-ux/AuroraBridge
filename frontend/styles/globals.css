@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+  }
+}
+
+@layer utilities {
+  .gradient-stellar {
+    background: linear-gradient(135deg, #0ea5e9 0%, #0369a1 100%);
+  }
+
+  .gradient-near {
+    background: linear-gradient(135deg, #a855f7 0%, #7e22ce 100%);
+  }
+
+  .gradient-bridge {
+    background: linear-gradient(135deg, #0ea5e9 0%, #a855f7 100%);
+  }
+
+  .shimmer {
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba(255, 255, 255, 0.2) 50%,
+      transparent 100%
+    );
+    background-size: 1000px 100%;
+    animation: shimmer 2s infinite linear;
+  }
+}
+
+body {
+  @apply bg-gradient-to-br from-slate-50 via-blue-50 to-purple-50 dark:from-slate-900 dark:via-blue-950 dark:to-purple-950 min-h-screen;
+}
