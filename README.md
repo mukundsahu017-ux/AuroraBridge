@@ -23,7 +23,7 @@ A decentralized, Rust-powered cross-chain bridge protocol enabling secure token 
 ## 📋 Table of Contents## 🏗️ Architecture
 
 
-
+- [Project name](#-project-name)AuroraBridge
 - [Project Description](#-project-description)This bridge uses the **Relayer + Guardian Multi-Sig** pattern (similar to Wormhole):
 
 - [Project Vision](#-project-vision)
@@ -797,5 +797,6 @@ This is a testnet deployment for educational and development purposes. **DO NOT 
 
 **Built with ❤️ for a unified Web3 ecosystem**
 <img width="1917" height="918" alt="Screenshot 2025-11-02 155725" src="https://github.com/user-attachments/assets/fda7ef64-3fc4-4cbb-b409-284d4e377404" />
+
 
 
