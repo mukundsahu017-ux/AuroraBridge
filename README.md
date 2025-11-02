@@ -796,3 +796,6 @@ This is a testnet deployment for educational and development purposes. **DO NOT 
 ---
 
 **Built with ❤️ for a unified Web3 ecosystem**
+<img width="1917" height="918" alt="Screenshot 2025-11-02 155725" src="https://github.com/user-attachments/assets/fda7ef64-3fc4-4cbb-b409-284d4e377404" />
+
+
